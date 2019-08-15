@@ -13,6 +13,7 @@
 		0102F5D02304AD9000F70A11 /* CYOA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0102F5CE2304AD9000F70A11 /* CYOA.xcdatamodeld */; };
 		0102F5D22304AD9100F70A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0102F5D12304AD9100F70A11 /* Assets.xcassets */; };
 		0102F5D52304AD9100F70A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0102F5D32304AD9100F70A11 /* LaunchScreen.storyboard */; };
+		0102F5DD2304D5FD00F70A11 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0102F5D12304AD9100F70A11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0102F5D42304AD9100F70A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0102F5D62304AD9100F70A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0102F5C72304AD9000F70A11 /* AppDelegate.swift */,
 				0102F5C92304AD9000F70A11 /* ViewController.swift */,
 				0102F5CB2304AD9000F70A11 /* Main.storyboard */,
+				0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */,
 				0102F5D12304AD9100F70A11 /* Assets.xcassets */,
 				0102F5D32304AD9100F70A11 /* LaunchScreen.storyboard */,
 				0102F5D62304AD9100F70A11 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0102F5DD2304D5FD00F70A11 /* StoryViewController.swift in Sources */,
 				0102F5CA2304AD9000F70A11 /* ViewController.swift in Sources */,
 				0102F5C82304AD9000F70A11 /* AppDelegate.swift in Sources */,
 				0102F5D02304AD9000F70A11 /* CYOA.xcdatamodeld in Sources */,
