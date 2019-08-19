@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--About Table Table View Controller-->
         <scene sceneID="hF3-fd-5Et">
             <objects>
-                <tableViewController id="ylJ-Zm-ZeI" sceneMemberID="viewController">
+                <tableViewController id="ylJ-Zm-ZeI" customClass="aboutTableTableViewController" customModule="CYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZFh-Uy-t3C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -90,7 +90,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-Yr-gkf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-lT-kcS">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUR-lT-kcS">
                                                 <rect key="frame" x="0.0" y="8" width="414" height="294"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -101,21 +101,33 @@
                                                 <rect key="frame" x="8" y="723" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button 4"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="SaM-Qe-6wp" eventType="touchUpInside" id="KNb-GW-n5N"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvL-Eh-Kbd">
                                                 <rect key="frame" x="8" y="650" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button 3"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="SaM-Qe-6wp" eventType="touchUpInside" id="B5e-cr-xE0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AVN-TB-ndm">
                                                 <rect key="frame" x="8" y="584" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button 2"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="SaM-Qe-6wp" eventType="touchUpInside" id="HOn-aD-a7t"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMT-se-LxY">
                                                 <rect key="frame" x="8" y="532" width="398" height="44"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button 1"/>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="SaM-Qe-6wp" eventType="touchUpInside" id="Bwd-f1-Acf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -141,10 +153,10 @@
                         <viewLayoutGuide key="safeArea" id="dYA-3V-iNf"/>
                     </view>
                     <connections>
-                        <outlet property="button1" destination="QMT-se-LxY" id="AcG-EI-aiZ"/>
-                        <outlet property="button2" destination="AVN-TB-ndm" id="qIi-rU-8gE"/>
-                        <outlet property="button3" destination="ZvL-Eh-Kbd" id="Cxg-O6-xni"/>
-                        <outlet property="button4" destination="VKH-lC-Wtr" id="D49-5N-QR0"/>
+                        <outlet property="button1" destination="QMT-se-LxY" id="Vlu-oE-bzt"/>
+                        <outlet property="button2" destination="AVN-TB-ndm" id="aJw-eS-dcp"/>
+                        <outlet property="button3" destination="ZvL-Eh-Kbd" id="8eF-Oa-ZNf"/>
+                        <outlet property="button4" destination="VKH-lC-Wtr" id="rMG-rN-pqS"/>
                         <outlet property="storyText" destination="hUR-lT-kcS" id="Fx2-VF-Iw1"/>
                     </connections>
                 </viewController>
