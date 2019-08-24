@@ -18,14 +18,17 @@ class StoryViewController: UIViewController {
     @IBOutlet var button4: UIButton!
     
     var currentIndex = PageID.pageID
+    let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        storyText.sizeToFit()
         loadPage()
     }
     
     func loadPage() {
         let currentPage = story[currentIndex.currentIndex]
+        defaults.set(currentIndex.currentIndex, forKey: "PageID")
         storyText.text = currentPage.text
         button1.setTitle(currentPage.button1Text, for: .normal)
         button2.setTitle(currentPage.button2Text, for: .normal)

@@ -93,7 +93,6 @@
 		01ACA385230DC2910034F675 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0102F5D32304AD9100F70A11 /* LaunchScreen.storyboard */,
 				01ACA35D2304DCD70034F675 /* StoryModel.swift */,
 				0189DBFD230DE57700C05278 /* Traits.swift */,
 				01ACA361230CF49A0034F675 /* PageID.swift */,
@@ -104,6 +103,7 @@
 		01ACA386230DC2BE0034F675 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0102F5D32304AD9100F70A11 /* LaunchScreen.storyboard */,
 				0102F5CB2304AD9000F70A11 /* Main.storyboard */,
 			);
 			path = Views;
