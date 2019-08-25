@@ -10,10 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let defaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-
+    @IBAction func readStory(_ sender: UIButton) {
+        navigationController?.pushViewController(StoryViewController(), animated: false)
+    }
+    
 }
 

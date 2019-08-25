@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="67" height="30"/>
                                         <state key="normal" title="The Story"/>
                                         <connections>
-                                            <segue destination="SaM-Qe-6wp" kind="show" id="pxQ-lm-vlt"/>
+                                            <segue destination="SaM-Qe-6wp" kind="show" id="jKm-Cn-9tw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-2K-vwA">

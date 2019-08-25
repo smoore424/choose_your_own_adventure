@@ -22,13 +22,15 @@ class StoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        storyText.sizeToFit()
+
         loadPage()
+        saveProgress()
+        storyText.sizeToFit()
     }
     
     func loadPage() {
+        
         let currentPage = story[currentIndex.currentIndex]
-        defaults.set(currentIndex.currentIndex, forKey: "PageID")
         storyText.text = currentPage.text
         button1.setTitle(currentPage.button1Text, for: .normal)
         button2.setTitle(currentPage.button2Text, for: .normal)
@@ -37,6 +39,7 @@ class StoryViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
+
         let currentPage = story[currentIndex.currentIndex]
         let rollTheDice = currentPage.rollTheDice
         
@@ -68,4 +71,18 @@ class StoryViewController: UIViewController {
         //return true or false based on if won.
         print("dice rolled")
     }
+    
+    func saveProgress() {
+        
+        defaults.set(currentIndex.currentIndex, forKey: "PageID")
+    }
+    
+    func findCurrentIndex() -> Int {
+        if defaults.object(forKey: "PageID") != nil {
+            return defaults.integer(forKey: "PageID")
+        } else {
+            return 0
+        }
+    }
+
 }
