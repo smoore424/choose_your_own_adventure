@@ -17,20 +17,20 @@ class StoryViewController: UIViewController {
     @IBOutlet var button3: UIButton!
     @IBOutlet var button4: UIButton!
     
-    var currentIndex = PageID.pageID
+//    var currentIndex = PageID.pageID
+    var currentIndex = 0
+    
     let defaults = UserDefaults.standard
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        findCurrentIndex()
         loadPage()
-        saveProgress()
         storyText.sizeToFit()
     }
     
     func loadPage() {
-        
-        let currentPage = story[currentIndex.currentIndex]
+        let currentPage = story[currentIndex]
         storyText.text = currentPage.text
         button1.setTitle(currentPage.button1Text, for: .normal)
         button2.setTitle(currentPage.button2Text, for: .normal)
@@ -39,8 +39,8 @@ class StoryViewController: UIViewController {
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
-
-        let currentPage = story[currentIndex.currentIndex]
+        
+        let currentPage = story[currentIndex]
         let rollTheDice = currentPage.rollTheDice
         
         if sender == button1 {
@@ -50,17 +50,16 @@ class StoryViewController: UIViewController {
                 //diceRoll will return true or false, will need another if statement for each page to go to depending on outcome.
                 //will need to adjust traits accordingly.
             } else {
-               currentIndex.currentIndex = currentPage.button1Action
+               currentIndex = currentPage.button1Action
             }
-            
         } else if sender == button2 {
-            currentIndex.currentIndex = currentPage.button2Action
+            currentIndex = currentPage.button2Action
         } else if sender == button3 {
-            currentIndex.currentIndex = currentPage.button3Action
+            currentIndex = currentPage.button3Action
         } else if sender == button4 {
-            currentIndex.currentIndex = currentPage.button4Action
+            currentIndex = currentPage.button4Action
         }
-        
+        saveProgress()
         loadPage()
     }
     
@@ -73,15 +72,14 @@ class StoryViewController: UIViewController {
     }
     
     func saveProgress() {
-        
-        defaults.set(currentIndex.currentIndex, forKey: "PageID")
+        defaults.set(currentIndex, forKey: "PageID")
     }
     
-    func findCurrentIndex() -> Int {
+    func findCurrentIndex() {
         if defaults.object(forKey: "PageID") != nil {
-            return defaults.integer(forKey: "PageID")
+            currentIndex = defaults.integer(forKey: "PageID")
         } else {
-            return 0
+            currentIndex = 0
         }
     }
 

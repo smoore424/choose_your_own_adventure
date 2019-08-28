@@ -10,7 +10,6 @@ import UIKit
 
 class StoryModel {
     
-    
     //id = page number
     var id: Int
     //text is the story
