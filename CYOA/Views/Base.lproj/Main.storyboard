@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--About Table Table View Controller-->
+        <!--About Table View Controller-->
         <scene sceneID="hF3-fd-5Et">
             <objects>
-                <tableViewController id="ylJ-Zm-ZeI" customClass="aboutTableTableViewController" customModule="CYOA" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ylJ-Zm-ZeI" customClass="aboutTableViewController" customModule="CYOA" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZFh-Uy-t3C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

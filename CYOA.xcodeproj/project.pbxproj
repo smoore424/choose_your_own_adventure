@@ -14,11 +14,10 @@
 		0102F5D22304AD9100F70A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0102F5D12304AD9100F70A11 /* Assets.xcassets */; };
 		0102F5D52304AD9100F70A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0102F5D32304AD9100F70A11 /* LaunchScreen.storyboard */; };
 		0102F5DD2304D5FD00F70A11 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */; };
-		0102F5DF2304D87F00F70A11 /* aboutTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102F5DE2304D87F00F70A11 /* aboutTableTableViewController.swift */; };
+		0102F5DF2304D87F00F70A11 /* aboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0102F5DE2304D87F00F70A11 /* aboutTableViewController.swift */; };
 		0189DBFE230DE57700C05278 /* Traits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189DBFD230DE57700C05278 /* Traits.swift */; };
 		01ACA35E2304DCD70034F675 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACA35D2304DCD70034F675 /* StoryModel.swift */; };
 		01ACA3602304DD580034F675 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACA35F2304DD580034F675 /* StoryData.swift */; };
-		01ACA362230CF49A0034F675 /* PageID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACA361230CF49A0034F675 /* PageID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +30,10 @@
 		0102F5D42304AD9100F70A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0102F5D62304AD9100F70A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
-		0102F5DE2304D87F00F70A11 /* aboutTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutTableTableViewController.swift; sourceTree = "<group>"; };
+		0102F5DE2304D87F00F70A11 /* aboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutTableViewController.swift; sourceTree = "<group>"; };
 		0189DBFD230DE57700C05278 /* Traits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traits.swift; sourceTree = "<group>"; };
 		01ACA35D2304DCD70034F675 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		01ACA35F2304DD580034F675 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
-		01ACA361230CF49A0034F675 /* PageID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +81,7 @@
 		01ACA384230DC26A0034F675 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0102F5DE2304D87F00F70A11 /* aboutTableTableViewController.swift */,
+				0102F5DE2304D87F00F70A11 /* aboutTableViewController.swift */,
 				0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */,
 				0102F5C92304AD9000F70A11 /* ViewController.swift */,
 			);
@@ -93,9 +91,8 @@
 		01ACA385230DC2910034F675 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				01ACA35D2304DCD70034F675 /* StoryModel.swift */,
 				0189DBFD230DE57700C05278 /* Traits.swift */,
-				01ACA361230CF49A0034F675 /* PageID.swift */,
+				01ACA35D2304DCD70034F675 /* StoryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,14 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				01ACA3602304DD580034F675 /* StoryData.swift in Sources */,
-				01ACA362230CF49A0034F675 /* PageID.swift in Sources */,
 				0102F5DD2304D5FD00F70A11 /* StoryViewController.swift in Sources */,
 				0102F5CA2304AD9000F70A11 /* ViewController.swift in Sources */,
 				0189DBFE230DE57700C05278 /* Traits.swift in Sources */,
 				0102F5C82304AD9000F70A11 /* AppDelegate.swift in Sources */,
 				01ACA35E2304DCD70034F675 /* StoryModel.swift in Sources */,
 				0102F5D02304AD9000F70A11 /* CYOA.xcdatamodeld in Sources */,
-				0102F5DF2304D87F00F70A11 /* aboutTableTableViewController.swift in Sources */,
+				0102F5DF2304D87F00F70A11 /* aboutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
