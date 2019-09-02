@@ -18,6 +18,12 @@
 		0189DBFE230DE57700C05278 /* Traits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0189DBFD230DE57700C05278 /* Traits.swift */; };
 		01ACA35E2304DCD70034F675 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACA35D2304DCD70034F675 /* StoryModel.swift */; };
 		01ACA3602304DD580034F675 /* StoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ACA35F2304DD580034F675 /* StoryData.swift */; };
+		01ED052C231B319200644E11 /* aboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED052B231B319200644E11 /* aboutModel.swift */; };
+		01ED052E231B888F00644E11 /* OurStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED052D231B888F00644E11 /* OurStory.swift */; };
+		01ED0530231B88BB00644E11 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED052F231B88BB00644E11 /* Rate.swift */; };
+		01ED0532231B891500644E11 /* CreditsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0531231B891500644E11 /* CreditsTableViewController.swift */; };
+		01ED0534231B893D00644E11 /* ContactTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0533231B893D00644E11 /* ContactTableViewController.swift */; };
+		01ED0536231B896B00644E11 /* Privacy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED0535231B896B00644E11 /* Privacy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		0189DBFD230DE57700C05278 /* Traits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Traits.swift; sourceTree = "<group>"; };
 		01ACA35D2304DCD70034F675 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		01ACA35F2304DD580034F675 /* StoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryData.swift; sourceTree = "<group>"; };
+		01ED052B231B319200644E11 /* aboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutModel.swift; sourceTree = "<group>"; };
+		01ED052D231B888F00644E11 /* OurStory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OurStory.swift; sourceTree = "<group>"; };
+		01ED052F231B88BB00644E11 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		01ED0531231B891500644E11 /* CreditsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsTableViewController.swift; sourceTree = "<group>"; };
+		01ED0533231B893D00644E11 /* ContactTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewController.swift; sourceTree = "<group>"; };
+		01ED0535231B896B00644E11 /* Privacy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Privacy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				0102F5DE2304D87F00F70A11 /* aboutTableViewController.swift */,
+				01ED0533231B893D00644E11 /* ContactTableViewController.swift */,
+				01ED0531231B891500644E11 /* CreditsTableViewController.swift */,
+				01ED052D231B888F00644E11 /* OurStory.swift */,
+				01ED0535231B896B00644E11 /* Privacy.swift */,
+				01ED052F231B88BB00644E11 /* Rate.swift */,
 				0102F5DC2304D5FD00F70A11 /* StoryViewController.swift */,
 				0102F5C92304AD9000F70A11 /* ViewController.swift */,
 			);
@@ -91,8 +108,9 @@
 		01ACA385230DC2910034F675 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0189DBFD230DE57700C05278 /* Traits.swift */,
+				01ED052B231B319200644E11 /* aboutModel.swift */,
 				01ACA35D2304DCD70034F675 /* StoryModel.swift */,
+				0189DBFD230DE57700C05278 /* Traits.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,13 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01ED0532231B891500644E11 /* CreditsTableViewController.swift in Sources */,
 				01ACA3602304DD580034F675 /* StoryData.swift in Sources */,
 				0102F5DD2304D5FD00F70A11 /* StoryViewController.swift in Sources */,
 				0102F5CA2304AD9000F70A11 /* ViewController.swift in Sources */,
 				0189DBFE230DE57700C05278 /* Traits.swift in Sources */,
 				0102F5C82304AD9000F70A11 /* AppDelegate.swift in Sources */,
+				01ED0534231B893D00644E11 /* ContactTableViewController.swift in Sources */,
+				01ED052C231B319200644E11 /* aboutModel.swift in Sources */,
+				01ED052E231B888F00644E11 /* OurStory.swift in Sources */,
 				01ACA35E2304DCD70034F675 /* StoryModel.swift in Sources */,
+				01ED0530231B88BB00644E11 /* Rate.swift in Sources */,
 				0102F5D02304AD9000F70A11 /* CYOA.xcdatamodeld in Sources */,
+				01ED0536231B896B00644E11 /* Privacy.swift in Sources */,
 				0102F5DF2304D87F00F70A11 /* aboutTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
