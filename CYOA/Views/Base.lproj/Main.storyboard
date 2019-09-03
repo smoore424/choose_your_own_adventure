@@ -84,8 +84,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-eP-Bka">
-                                <rect key="frame" x="186" y="438" width="41" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Do: Write up a little bio about how we came together to create the story and app " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6aF-eP-Bka">
+                                <rect key="frame" x="20" y="110" width="374" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nON-0L-KHg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="102.89855072463769" y="1290.4017857142856"/>
+            <point key="canvasLocation" x="-971.01449275362324" y="1305.8035714285713"/>
         </scene>
         <!--Rate-->
         <scene sceneID="NeB-6y-2Ii">
@@ -108,8 +108,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGG-4U-FVQ">
-                                <rect key="frame" x="186" y="438" width="35" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rate - TO DO: This page opens in the app store on page to rate the app" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGG-4U-FVQ">
+                                <rect key="frame" x="20" y="255" width="374" height="284"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -122,7 +122,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N8r-j2-isa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900.00000000000011" y="1287.7232142857142"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="1305.8035714285713"/>
+        </scene>
+        <!--Web View-->
+        <scene sceneID="r9e-NI-xGO">
+            <objects>
+                <viewController storyboardIdentifier="web" id="wTx-Fa-KQT" customClass="webView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ckR-RL-xhf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2K4-yI-U5N"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2SQ-bl-JuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="2036"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JZz-G2-BXt">
+            <objects>
+                <viewController storyboardIdentifier="mail" id="66I-kA-szj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cty-D3-zgx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P5A-Yr-DfK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJd-iN-Ot6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853" y="1965"/>
         </scene>
         <!--Credits Table View Controller-->
         <scene sceneID="KxE-Cb-c43">
@@ -147,10 +177,13 @@
                             <outlet property="delegate" destination="oEC-AV-htL" id="381-qw-uJJ"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="wTx-Fa-KQT" kind="show" identifier="credit" id="sT5-5A-SMm"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zkG-Zl-zFQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1754" y="1290"/>
+            <point key="canvasLocation" x="775" y="1306"/>
         </scene>
         <!--Contact Table View Controller-->
         <scene sceneID="awK-nI-oPf">
@@ -178,7 +211,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTQ-SA-BdT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2595" y="1285"/>
+            <point key="canvasLocation" x="1836" y="1306"/>
         </scene>
         <!--Privacy-->
         <scene sceneID="AVg-Pf-FTN">
@@ -202,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="clQ-Qm-bnd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3450.7246376811595" y="1293.75"/>
+            <point key="canvasLocation" x="2854" y="1306"/>
         </scene>
         <!--StoryViewController-->
         <scene sceneID="Gsg-ng-7Cs">

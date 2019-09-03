@@ -6,7 +6,7 @@
 //  Copyright © 2019 Stacey. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class Privacy: UIViewController {
     
