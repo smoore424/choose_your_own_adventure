@@ -13,6 +13,7 @@ class SectionModel {
     var sectionItems: [String]
     var target: [String]
     
+    
     init(sectionName: String, sectionItems: [String], target: [String]) {
         self.sectionName = sectionName
         self.sectionItems = sectionItems

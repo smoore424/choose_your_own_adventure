@@ -12,7 +12,7 @@ class Traits {
     
     private init() {}
     
-    static let trait = Traits()
+    static let shared = Traits()
     
     var combat = 0
     var charisma = 0
@@ -20,4 +20,5 @@ class Traits {
     var techSavy = 0
     var diplomacy = 0
     var luck = 0
+    
 }

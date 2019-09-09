@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SafariServices
 
 class CreditsTableViewController: UITableViewController {
 
     private var sections = [SectionModel]()
+    
+    let creditCell = "creditCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +24,7 @@ class CreditsTableViewController: UITableViewController {
         footer.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
         tableView.tableFooterView = footer
         
-        sections = [SectionModel(sectionName: "Photos", sectionItems: ["Website 1", "Website 2"], target: ["web","web"])]
+        sections = [SectionModel(sectionName: "Photos", sectionItems: ["Google", "Yahoo"], target: ["http://google.com","http://yahoo.com"])]
     }
 
     // MARK: - Table view data source
@@ -43,7 +46,7 @@ class CreditsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "creditCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: creditCell, for: indexPath)
         
         cell.textLabel!.text = sections[indexPath.section].sectionItems[indexPath.row]
 
@@ -52,8 +55,9 @@ class CreditsTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let targetVC = sections[indexPath.section].target[indexPath.row]
-        let viewController = storyboard?.instantiateViewController(withIdentifier: targetVC)
-        self.navigationController?.pushViewController(viewController!, animated: true)
+        let url = URL(string: targetVC)
+        let safariVC = SFSafariViewController(url: url!)
+        present(safariVC, animated: true, completion: nil)
     }
 
 }

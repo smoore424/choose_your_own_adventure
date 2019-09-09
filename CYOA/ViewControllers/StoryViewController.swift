@@ -17,7 +17,6 @@ class StoryViewController: UIViewController {
     @IBOutlet var button3: UIButton!
     @IBOutlet var button4: UIButton!
     
-//    var currentIndex = PageID.pageID
     var currentIndex = 0
     
     let defaults = UserDefaults.standard
@@ -36,6 +35,8 @@ class StoryViewController: UIViewController {
         button2.setTitle(currentPage.button2Text, for: .normal)
         button3.setTitle(currentPage.button3Text, for: .normal)
         button4.setTitle(currentPage.button4Text, for: .normal)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "info", style: .plain, target: self, action: #selector(infoButtonPressed))
     }
 
     @IBAction func buttonPressed(_ sender: UIButton) {
@@ -63,12 +64,10 @@ class StoryViewController: UIViewController {
         loadPage()
     }
     
-    func diceRoll() {
-        //trait(s) passed into function
-        //can I write one function that will accept a varying number of traits?
-        //"win" condition passed into function
-        //return true or false based on if won.
-        print("dice rolled")
+    @objc func infoButtonPressed() {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "traits")
+        
+        navigationController?.pushViewController(viewController!, animated: true)
     }
     
     func saveProgress() {
@@ -81,6 +80,16 @@ class StoryViewController: UIViewController {
         } else {
             currentIndex = 0
         }
+    }
+    
+    //MARK: Begin dice roll logic functions
+    
+    func diceRoll() {
+        //trait(s) passed into function
+        //can I write one function that will accept a varying number of traits?
+        //"win" condition passed into function
+        //return true or false based on if won.
+        print("dice rolled")
     }
 
 }

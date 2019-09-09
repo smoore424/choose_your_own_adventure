@@ -8,7 +8,7 @@
 
 import Foundation
 
-let trait = Traits.trait
+let trait = Traits.shared
 
 var story = [
     StoryModel(id: 0,

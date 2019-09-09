@@ -11,6 +11,8 @@ import UIKit
 class aboutTableViewController: UITableViewController {
 
     private var sections = [SectionModel]()
+    
+    let aboutCell = "aboutCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ class aboutTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "aboutCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: aboutCell, for: indexPath)
         
         cell.textLabel!.text = sections[indexPath.section].sectionItems[indexPath.row]
         
